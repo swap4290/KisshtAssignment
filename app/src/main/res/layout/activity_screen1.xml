@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context=".view.Screen1Activity">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/llDraw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/llView"/>
+
+        <LinearLayout
+            android:id="@+id/llView"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:id="@+id/ivCircle"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="onCircleClick"
+                android:src="@drawable/background_circle"
+                />
+
+            <ImageView
+                android:id="@+id/ivSquare"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="onRectClick"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/background_rect"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btUndo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/undo"
+                android:onClick="onUndo"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</layout>

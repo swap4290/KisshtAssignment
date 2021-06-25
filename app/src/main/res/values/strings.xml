@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KisshtAssignment</string>
+    <string name="screen_1">Screen 1</string>
+    <string name="screen_2">Screen 2</string>
+    <string name="unsplash_access_key">khD1lWUk6C-B9qrsYPj32Nfy5gQNWzBxdhitn2ue_po</string>
+    <string name="undo">Undo</string>
+</resources>
